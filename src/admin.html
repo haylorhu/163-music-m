@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//at.alicdn.com/t/font_852994_1qnf0wo950t.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+     <title>云音乐</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <script src="./js/admin/eventHub.js"></script>
+
+</head>
+<body>
+        <div class="layout1">
+            <section class="songList" id="songList">
+                    
+            </section>
+        </div>
+    <div class="layout">
+        <section class="newSong">
+            <div class="topic">
+                <p>
+                    上传歌曲
+                </p>
+            </div>
+            <main >
+                <div class="upload" id="upload">
+                    <div class="ballWaper" id="uploadArea">
+                        <svg class="icon ball" aria-hidden="true" fill="#ddd">
+                            <use xlink:href="#icon-lanqiu1"></use>
+                        </svg>
+                        <div class="upcloud" id="clickUpload">
+                            <svg class="icon cloud" aria-hidden="true">
+                                <use xlink:href="#icon-yunduanshangchuan"></use>
+                            </svg>
+                            <p>
+                                点击上传或者拖拽上传
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="songForm">
+                    
+                </div>
+            </main>
+        </section>
+        <section class="newList">
+            <div class="topic">
+                <p>
+                    新建歌单
+                </p>
+            </div>
+            <form action="">
+                <div class="row"><label for="">歌单名</label><input type="text"></div>
+                <div class="row"><label for="">简介</label> <textarea name="" id="" cols="10" rows="10"></textarea> </div>
+                <button type="submit">创建歌单</button>
+            </form>
+        </section>
+    </div>
+    <Script src="./js/admin/eventHub.js"></Script>
+    <script src="../node_modules/plupload-3.1.2/js/moxie.min.js"></script>
+    <script src="../node_modules/moxie-1.5.6/bin/js/moxie.min.js"></script>
+    <script src="../node_modules/leancloud-storage/dist/av-min.js"></script>
+    <script src="../node_modules/qiniu-js/dist/qiniu.min.js"></script>
+    <script src="./js/admin/upload.js"></script>
+    <script src="./js/admin/songForm.js"></script>
+    <script src="./js/initializers/av.js"></script>
+    <script src="./js/admin/songList.js"></script>
+    <script src="./js/index/page1-1.js"></script>
+    <script src="./js/index/page1-2.js"></script>
+    <script src="./js/index/page1.js"></script>
+    <script src="./js/index/page2.js"></script>
+    <script src="./js/index/page3.js"></script>
+</body>
+</html>
