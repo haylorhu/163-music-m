@@ -1,23 +1,17 @@
 {
     view={
-        el:"upload"
-    },
+        el:`upload`
+    }
     model={
-        data:{
-
+        model:{
+            data:{}
         }
-    },
+    }
     controller={
         init(view,model){
-            this.view = view
+            this.view=view
             this.model = model
-            var observable = qiniu.upload(file, key, token, putExtra, config)
-            var subscription = observable.subscribe(observer) // 上传开始
-            // or
-            var subscription = observable.subscribe(next, error, complete) // 这样传参形式也可以
-            subscription.unsubscribe() // 上传取消
-            console.log(qiniu);
-            
+            this.initQiniu()
         },
         initQiniu(){
             var uploader = Qiniu.uploader({
@@ -53,7 +47,7 @@
                             url:sourceLink,
                             name:response.key
                         })
-                        // console.log(data);
+                        console.log("ok");
                             
                         
                         // 参考http://developer.qiniu.com/docs/v6/api/overview/up/response/simple-response.html
@@ -72,5 +66,5 @@
 
 
     }
-    controller.initQiniu()
+    controller.init(view,model)
 }
