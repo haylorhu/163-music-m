@@ -12,7 +12,7 @@
         <div class="row"><label for=""><p>歌词</p></label><textarea name="lyrics" cols="10" rows="10"></textarea></div>
         <div class="row"><label for=""><p>封面</p></label><input type="text" name="cover" value="__cover__"></div>
         <div class="row"><button>提交</button></div>
-      </form
+    </form>
         `,
         render(data={}){
           let placeHolders = ['name','url','singer','id','cover','lyric']
